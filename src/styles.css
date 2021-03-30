@@ -1,20 +1,26 @@
 :root {
-  --dark-theme-primary-text: #FFFFFFF0;
-  --dark-theme-secondary-text: #9D9FA2;
-  --dark-theme-primary-color: #118CFF;
-  --dark-theme-background-color: #1D2022;
+  --dark-theme-primary-text: #fffffff0;
+  --dark-theme-secondary-text: #9d9fa2;
+  --dark-theme-primary-color: #118cff;
+  --dark-theme-background-color: #1d2022;
   --dark-theme-secondary-panel-color: #232425;
 }
 
 body {
+  margin: 0px;
+}
+
+.App {
   align-items: center;
   background-color: var(--dark-theme-background-color);
   display: flex;
   flex-direction: row;
   font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
   font-size: 13px;
   justify-content: flex-start;
   margin: 0px;
+  text-align: center;
 }
 
 div.sidebar-header {
@@ -23,17 +29,17 @@ div.sidebar-header {
 
 nav.sidebar {
   background-color: var(--dark-theme-secondary-panel-color);
-  border-right: #000000;
-  border-right-width: 1px;
   border-right-style: solid;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 100vh;
-  width: 177px;
+  border-right-width: 1px;
+  border-right: #000000;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  height: 100vh;
   overflow-y: scroll;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 177px;
 }
 
 nav.sidebar > ul {
@@ -57,7 +63,7 @@ nav.sidebar > ul li {
 }
 
 nav.sidebar > ul > li.active {
-  background-color: #3C3C3E;
+  background-color: #3c3c3e;
 }
 
 nav.sidebar > ul > li > svg {
@@ -92,8 +98,8 @@ header {
 
 header:hover {
   border-bottom: 1px solid #000000;
-  transition: border-bottom .5s;
-  transition-delay: .5s
+  transition: border-bottom 0.5s;
+  transition-delay: 0.5s;
 }
 
 section#main > header svg {
@@ -110,7 +116,7 @@ section#main > header svg {
 }
 
 .no-select {
-	-webkit-touch-callout: none;
+  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -132,9 +138,9 @@ button {
 }
 
 button:hover {
-  background-color: #2A2C2F;
-  transition: background-color .5s;
-  transition-delay: .5s
+  background-color: #2a2c2f;
+  transition: background-color 0.5s;
+  transition-delay: 0.5s;
 }
 
 main {
