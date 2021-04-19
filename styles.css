@@ -136,3 +136,7 @@ button:hover {
   transition: background-color .5s;
   transition-delay: .5s
 }
+
+main {
+  padding: 24px;
+}
