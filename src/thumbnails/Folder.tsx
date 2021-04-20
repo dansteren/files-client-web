@@ -21,42 +21,15 @@ const Folder: FC<Props> = ({ className, width, height }) => {
       />
       <rect y="16" width="118" height="82" rx="10" fill="url(#paint1_linear)" />
       <path
-        d="M59 16H10C4.47715 16 0 20.4772 0 26V88C0 93.5228 4.47715 98 10 98H59V16Z"
-        fill="url(#paint2_linear)"
+        d="M1.99927 94C1.53698 93.3845 1.14405 92.714 0.832092 92H117.168C116.856 92.714 116.463 93.3845 116.001 94H1.99927Z"
+        fill="black"
+        fillOpacity="0.08"
       />
       <path
-        d="M59 16H108C113.523 16 118 20.4772 118 26V88C118 93.5228 113.523 98 108 98H59V16Z"
-        fill="url(#paint3_linear)"
+        d="M0.200036 90C0.0688605 89.3538 0 88.6849 0 88H118C118 88.6849 117.931 89.3538 117.8 90H0.200036Z"
+        fill="black"
+        fillOpacity="0.08"
       />
-      <mask
-        id="mask0"
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="0"
-        y="16"
-        width="118"
-        height="82"
-      >
-        <rect y="16" width="118" height="82" rx="10" fill="#666666" />
-      </mask>
-      <g mask="url(#mask0)">
-        <line
-          y1="89"
-          x2="118"
-          y2="89"
-          stroke="black"
-          strokeOpacity="0.08"
-          strokeWidth="2"
-        />
-        <line
-          y1="93"
-          x2="118"
-          y2="93"
-          stroke="black"
-          strokeOpacity="0.08"
-          strokeWidth="2"
-        />
-      </g>
       <defs>
         <linearGradient
           id="paint0_linear"
@@ -66,7 +39,7 @@ const Folder: FC<Props> = ({ className, width, height }) => {
           y2="27.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#666666" />
+          <stop stopColor="#9E9E9E" />
           <stop offset="1" stopColor="#252525" />
         </linearGradient>
         <linearGradient
@@ -77,30 +50,8 @@ const Folder: FC<Props> = ({ className, width, height }) => {
           y2="98"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#666666" />
-          <stop offset="1" stopColor="#424242" />
-        </linearGradient>
-        <linearGradient
-          id="paint2_linear"
-          x1="10"
-          y1="54"
-          x2="1.53416e-06"
-          y2="54"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopOpacity="0" />
-          <stop offset="1" stopOpacity="0.05" />
-        </linearGradient>
-        <linearGradient
-          id="paint3_linear"
-          x1="108"
-          y1="54"
-          x2="118"
-          y2="54"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopOpacity="0" />
-          <stop offset="1" stopOpacity="0.05" />
+          <stop stopColor="#9E9E9E" />
+          <stop offset="1" stopColor="#616161" />
         </linearGradient>
       </defs>
     </svg>

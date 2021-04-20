@@ -21,6 +21,13 @@ export default {
     { id: '08', name: 'Portal', type: 'dir' },
     { id: '09', name: 'Screenshots', type: 'dir' },
     { id: '10', name: 'Repos', type: 'dir' },
-    { id: '11', name: 'Home', type: 'dir' }
+    { id: '11', name: 'Home', type: 'dir' },
+    { id: '12', name: 'test', type: 'file' },
+    { id: '13', name: 'another', type: 'file' },
+    { id: '14', name: 'banana', type: 'file' },
+    { id: '15', name: 'README.md', type: 'file' },
+    { id: '16', name: 'package.json', type: 'file' },
+    { id: '17', name: 'CONTRIBUTING.md', type: 'file' },
+    { id: '18', name: 'example.json', type: 'file' }
   ]
 }

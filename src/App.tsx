@@ -23,9 +23,15 @@ export default function App() {
         </header>
         <main>
           {DB.files.map((file) => {
+            let thumbnail =
+              file.type === 'dir' ? (
+                <Thumbnails.Folder height="49" />
+              ) : (
+                <Thumbnails.File height="61.5" />
+              )
             return (
               <div className="thumbnail-item" key={file.id}>
-                <Thumbnails.Folder height="49" />
+                {thumbnail}
                 <span>{file.name}</span>
               </div>
             )
