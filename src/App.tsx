@@ -1,58 +1,13 @@
 import './styles.css'
 import * as Icons from './icons'
+import * as Thumbnails from './thumbnails'
+import Sidebar from './Sidebar'
+import DB from './mockDB'
 
 export default function App() {
   return (
     <div className="App">
-      <nav className="sidebar">
-        <div className="sidebar-header"></div>
-        <ul>
-          <li className="active">
-            <Icons.Folder />
-            <span className="no-select">AirDrop</span>
-          </li>
-          <li>
-            <Icons.Folder />
-            <span className="no-select">Recents</span>
-          </li>
-          <li>
-            <Icons.Folder />
-            <span className="no-select">Applications</span>
-          </li>
-          <li>
-            <Icons.Folder />
-            <span className="no-select">Desktop</span>
-          </li>
-          <li>
-            <Icons.Folder />
-            <span className="no-select">Documents</span>
-          </li>
-          <li>
-            <Icons.Folder />
-            <span className="no-select">Downloads</span>
-          </li>
-          <li>
-            <Icons.Folder />
-            <span className="no-select">Pictures</span>
-          </li>
-          <li>
-            <Icons.Folder />
-            <span className="no-select">Portal</span>
-          </li>
-          <li>
-            <Icons.Folder />
-            <span className="no-select">Screenshots</span>
-          </li>
-          <li>
-            <Icons.Folder />
-            <span className="no-select">Repos</span>
-          </li>
-          <li>
-            <Icons.Folder />
-            <span className="no-select">Home</span>
-          </li>
-        </ul>
-      </nav>
+      <Sidebar favorites={DB.favorites} />
       <section id="main">
         <header>
           <button type="button">
@@ -66,9 +21,14 @@ export default function App() {
             <Icons.Search />
           </button>
         </header>
-        <main></main>
+        <main>
+          <Thumbnails.Folder height="49" />
+          <Thumbnails.Folder height="49" />
+          <Thumbnails.Folder height="49" />
+          <Thumbnails.Folder height="49" />
+          <Thumbnails.Folder height="49" />
+        </main>
       </section>
-      <div className="main"></div>
     </div>
   )
 }

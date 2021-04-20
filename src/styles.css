@@ -11,68 +11,12 @@ body {
 }
 
 .App {
-  align-items: center;
   background-color: var(--dark-theme-background-color);
   display: flex;
   flex-direction: row;
   font-family: 'Open Sans', sans-serif;
   font-family: sans-serif;
   font-size: 13px;
-  justify-content: flex-start;
-  margin: 0px;
-  text-align: center;
-}
-
-div.sidebar-header {
-  height: 50px;
-}
-
-nav.sidebar {
-  background-color: var(--dark-theme-secondary-panel-color);
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-right: #000000;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  overflow-y: scroll;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 177px;
-}
-
-nav.sidebar > ul {
-  display: flex;
-  margin: 0;
-  flex-direction: column;
-  font-size: 1em;
-  padding: 0px;
-  padding-top: 10px;
-}
-
-nav.sidebar > ul li {
-  list-style-type: none;
-  display: flex;
-  width: 100%;
-  border-radius: 6px;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  color: white;
-}
-
-nav.sidebar > ul > li.active {
-  background-color: #3c3c3e;
-}
-
-nav.sidebar > ul > li > svg {
-  margin: 5px 7px;
-  color: var(--dark-theme-primary-color);
-  width: 16px;
-  height: 16px;
-  padding-top: 2px;
-  padding-bottom: 2px;
 }
 
 section#main {
