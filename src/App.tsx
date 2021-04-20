@@ -22,11 +22,14 @@ export default function App() {
           </button>
         </header>
         <main>
-          <Thumbnails.Folder height="49" />
-          <Thumbnails.Folder height="49" />
-          <Thumbnails.Folder height="49" />
-          <Thumbnails.Folder height="49" />
-          <Thumbnails.Folder height="49" />
+          {DB.files.map((file) => {
+            return (
+              <div className="thumbnail-item" key={file.id}>
+                <Thumbnails.Folder height="49" />
+                <span>{file.name}</span>
+              </div>
+            )
+          })}
         </main>
       </section>
     </div>
