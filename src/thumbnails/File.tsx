@@ -13,29 +13,42 @@ const File: FC<Props> = ({ className, width, height }) => {
       className={className}
       width={width}
       height={height}
-      viewBox="0 0 95 123"
+      viewBox="0 0 86 114"
     >
       <path
-        d="M5 9C2.23858 9 0 11.2386 0 14V118C0 120.761 2.23858 123 5 123H81C83.7614 123 86 120.761 86 118V42L53 9H5Z"
+        d="M5 0C2.23858 0 0 2.23858 0 5V109C0 111.761 2.23858 114 5 114H81C83.7614 114 86 111.761 86 109V33L53 0H5Z"
         fill="#F4F4F4"
       />
-      <g filter="url(#filter0_d)">
-        <path
-          d="M53 9V37C53 39.7614 55.2386 42 58 42H86L53 9Z"
-          fill="#F4F4F4"
-        />
+      <mask
+        id="mask0"
+        mask-type="alpha"
+        maskUnits="userSpaceOnUse"
+        x="0"
+        y="0"
+        width="86"
+        height="114"
+      >
+        <path d="M0 0H53L86 33V114H0V0Z" fill="#C4C4C4" />
+      </mask>
+      <g mask="url(#mask0)">
+        <g filter="url(#filter0_d)">
+          <path
+            d="M53 0V28C53 30.7614 55.2386 33 58 33H86L53 0Z"
+            fill="#F4F4F4"
+          />
+        </g>
       </g>
       <defs>
         <filter
           id="filter0_d"
           x="42"
-          y="0"
+          y="-9"
           width="53"
           height="53"
           filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
+          color-interpolation-filters="sRGB"
         >
-          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
