@@ -1,3 +1,5 @@
+import { FileType } from './types'
+
 export default {
   favorites: [
     { id: '01', name: 'AirDrop' },
@@ -25,9 +27,9 @@ export default {
     { id: '12', name: 'test', type: 'file' },
     { id: '13', name: 'another', type: 'file' },
     { id: '14', name: 'banana', type: 'file' },
-    { id: '15', name: 'README.md', type: 'file' },
-    { id: '16', name: 'package.json', type: 'file' },
+    { id: '15', name: 'WWWWWWWWW WWWWWWWWWW', type: 'file' },
+    { id: '16', name: 'This file name is almost too long', type: 'file' },
     { id: '17', name: 'CONTRIBUTING.md', type: 'file' },
-    { id: '18', name: 'example.json', type: 'file' }
-  ]
+    { id: '18', name: 'Long file name that is way too long.json', type: 'file' }
+  ] as Array<FileType>
 }

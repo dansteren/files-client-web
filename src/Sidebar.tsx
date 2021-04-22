@@ -1,5 +1,5 @@
 import * as Icons from './icons'
-import './Sidebar.css'
+import styles from './Sidebar.module.css'
 
 interface Favorite {
   id: string
@@ -12,15 +12,15 @@ interface Props {
 
 export default function Sidebar({ favorites }: Props) {
   return (
-    <nav className="sidebar">
-      <div className="sidebar-header"></div>
-      <span className="sidebar-group-title">Favorites</span>
+    <nav className={styles.sidebar}>
+      <div className={styles.header}></div>
+      <span className={styles.groupTitle}>Favorites</span>
       <ul>
         {favorites.map((favorite) => {
           return (
             <li key={favorite.id}>
               <Icons.Folder />
-              <span className="no-select">{favorite.name}</span>
+              <span className={styles.noSelect}>{favorite.name}</span>
             </li>
           )
         })}

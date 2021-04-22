@@ -1,7 +1,7 @@
 import './styles.css'
 import * as Icons from './icons'
-import * as Thumbnails from './thumbnails'
 import Sidebar from './Sidebar'
+import FileIcon from './FileIcon'
 import DB from './mockDB'
 
 export default function App() {
@@ -22,20 +22,9 @@ export default function App() {
           </button>
         </header>
         <main>
-          {DB.files.map((file) => {
-            let thumbnail =
-              file.type === 'dir' ? (
-                <Thumbnails.Folder height="49" />
-              ) : (
-                <Thumbnails.File height="61.5" />
-              )
-            return (
-              <div className="thumbnail-item" key={file.id}>
-                {thumbnail}
-                <span>{file.name}</span>
-              </div>
-            )
-          })}
+          {DB.files.map((file) => (
+            <FileIcon file={file} key={file.id} />
+          ))}
         </main>
       </section>
     </div>

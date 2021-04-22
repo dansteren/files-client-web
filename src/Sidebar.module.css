@@ -1,29 +1,16 @@
-div.sidebar-header {
-  height: 50px;
-}
-
-span.sidebar-group-title {
-  color: #616161;
-  font-weight: bold;
-  font-size: 0.85em;
-}
-
-nav.sidebar {
+.sidebar {
   background-color: var(--dark-theme-secondary-panel-color);
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-right: #000000;
-  box-sizing: border-box;
+  border-right: #000000 solid 1px;
   display: flex;
   flex-direction: column;
   height: 100vh;
   overflow-y: scroll;
   padding-left: 10px;
   padding-right: 10px;
-  width: 177px;
+  width: 190px;
 }
 
-nav.sidebar > ul {
+.sidebar > ul {
   display: flex;
   margin: 0;
   flex-direction: column;
@@ -32,7 +19,7 @@ nav.sidebar > ul {
   padding-top: 10px;
 }
 
-nav.sidebar > ul li {
+.sidebar > ul li {
   list-style-type: none;
   display: flex;
   width: 100%;
@@ -43,11 +30,11 @@ nav.sidebar > ul li {
   color: white;
 }
 
-nav.sidebar > ul > li.active {
+.sidebar > ul > li.active {
   background-color: #3c3c3e;
 }
 
-nav.sidebar > ul > li > svg {
+.sidebar > ul > li > svg {
   margin: 5px 7px;
   color: var(--dark-theme-primary-color);
   width: 16px;
@@ -56,7 +43,17 @@ nav.sidebar > ul > li > svg {
   padding-bottom: 2px;
 }
 
-.no-select {
+.header {
+  height: 50px;
+}
+
+.groupTitle {
+  color: #616161;
+  font-weight: bold;
+  font-size: 0.85em;
+}
+
+.noSelect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;

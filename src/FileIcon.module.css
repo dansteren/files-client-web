@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
+  width: 100%;
+}
+
+.thumbnail {
+  height: 72px;
+  width: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.filename {
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  border-radius: 3px;
+  padding: 2px;
+  box-sizing: border-box;
+}

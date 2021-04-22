@@ -21,7 +21,7 @@ body {
 
 section#main {
   height: 100vh;
-  width: calc(100vw - 177px);
+  width: 100%;
   overflow-y: scroll;
 }
 
@@ -79,7 +79,7 @@ button:hover {
 }
 
 main {
-  padding: 20px 5px;
+  padding: 20px 10px 20px 5px;
   display: grid;
   grid-template-columns: repeat(auto-fill, 110px);
   grid-auto-rows: 110px;
@@ -87,12 +87,4 @@ main {
   justify-items: center;
   align-items: start;
   justify-content: space-evenly;
-}
-
-.thumbnail-item {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  color: white;
 }
