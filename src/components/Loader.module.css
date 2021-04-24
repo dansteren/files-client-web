@@ -1,0 +1,83 @@
+.container {
+  width: var(--width);
+  height: calc(var(--width) * .75);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  --duration: 2s;
+  --short: calc(var(--width) * .75 * .5866);
+  --medium: calc(var(--width) * .75 * .8);
+  --tall: 100%;
+}
+
+.common {
+  width: calc(var(--width) / 10);
+  height: var(--short);
+  border-radius: calc(var(--width) / 10);
+}
+
+.one {
+  background-color: #c678dd;
+  animation: one var(--duration) infinite;
+}
+.two {
+  background-color: #61afef;
+  height: var(--medium);
+  align-self: flex-start;
+  animation: two var(--duration) infinite;
+}
+.three {
+  background-color: #d19a66;
+  animation: three var(--duration) infinite;
+}
+.four {
+  background-color: #e06c75;
+  animation: four var(--duration) infinite;
+}
+.five {
+  background-color: #98c379;
+  height: var(--medium);
+  align-self: flex-end;
+  animation: five var(--duration) infinite;
+}
+.six {
+  background-color: #e5c07b;
+  animation: six var(--duration) infinite;
+}
+
+@keyframes one {
+  0% { height: var(--short); }
+  13.33% { height: var(--tall); }
+  26.67% { height: var(--short); }
+}
+
+@keyframes two {
+  13.33% { height: var(--medium); }
+  26.67% { height: var(--tall); }
+  40% { height: var(--medium); }
+}
+
+@keyframes three {
+  20% { height: var(--short); }
+  33.33% { height: var(--tall); }
+  46.67% { height: var(--short); }
+}
+
+@keyframes four {
+  26.67% { height: var(--short); }
+  40% { height: var(--tall); }
+  53.33% { height: var(--short); }
+}
+
+@keyframes five {
+  33.33% { height: var(--medium); }
+  46.67% { height: var(--tall); }
+  60% { height: var(--medium); }
+}
+
+@keyframes six {
+  40% { height: var(--short); }
+  53.33% { height: var(--tall); }
+  66.67% { height: var(--short); }
+}
