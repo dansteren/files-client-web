@@ -8,5 +8,5 @@ export default function BackArrow({ className }: { className?: string }) {
         strokeLinecap="round"
       />
     </svg>
-  )
+  );
 }

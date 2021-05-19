@@ -1,8 +1,8 @@
-import './styles.css'
-import * as Icons from './icons'
-import Sidebar from './Sidebar'
-import FileIcon from './FileIcon'
-import DB from './mockDB'
+import "./styles.css";
+import * as Icons from "./icons";
+import Sidebar from "./Sidebar";
+import FileIcon from "./FileIcon";
+import DB from "./mockDB";
 
 export default function App() {
   return (
@@ -28,5 +28,5 @@ export default function App() {
         </main>
       </section>
     </div>
-  )
+  );
 }

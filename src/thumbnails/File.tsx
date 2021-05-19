@@ -1,10 +1,10 @@
-import { CSSProperties, FC } from 'react'
+import { CSSProperties, FC } from "react";
 
 interface Props {
-  style?: CSSProperties
-  width?: string
-  height?: string
-  className?: string
+  style?: CSSProperties;
+  width?: string;
+  height?: string;
+  className?: string;
 }
 
 const File: FC<Props> = ({ className, width, height }) => {
@@ -74,6 +74,6 @@ const File: FC<Props> = ({ className, width, height }) => {
         </filter>
       </defs>
     </svg>
-  )
-}
-export default File
+  );
+};
+export default File;

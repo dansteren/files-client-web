@@ -15,5 +15,5 @@ export default function Search({ className }: { className?: string }) {
         strokeLinecap="round"
       />
     </svg>
-  )
+  );
 }

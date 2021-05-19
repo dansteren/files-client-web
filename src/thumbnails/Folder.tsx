@@ -1,10 +1,10 @@
-import { CSSProperties, FC } from 'react'
+import { CSSProperties, FC } from "react";
 
 interface Props {
-  style?: CSSProperties
-  width?: string
-  height?: string
-  className?: string
+  style?: CSSProperties;
+  width?: string;
+  height?: string;
+  className?: string;
 }
 
 const Folder: FC<Props> = ({ className, width, height }) => {
@@ -55,6 +55,6 @@ const Folder: FC<Props> = ({ className, width, height }) => {
         </linearGradient>
       </defs>
     </svg>
-  )
-}
-export default Folder
+  );
+};
+export default Folder;

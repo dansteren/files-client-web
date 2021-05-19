@@ -1,13 +1,13 @@
-import * as Icons from './icons'
-import styles from './Sidebar.module.css'
+import * as Icons from "./icons";
+import styles from "./Sidebar.module.css";
 
 interface Favorite {
-  id: string
-  name: string
+  id: string;
+  name: string;
 }
 
 interface Props {
-  favorites: Favorite[]
+  favorites: Favorite[];
 }
 
 export default function Sidebar({ favorites }: Props) {
@@ -22,9 +22,9 @@ export default function Sidebar({ favorites }: Props) {
               <Icons.Folder />
               <span className={styles.noSelect}>{favorite.name}</span>
             </li>
-          )
+          );
         })}
       </ul>
     </nav>
-  )
+  );
 }

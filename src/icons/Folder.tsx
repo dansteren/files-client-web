@@ -8,5 +8,5 @@ export default function Folder({ className }: { className?: string }) {
         fill="currentColor"
       />
     </svg>
-  )
+  );
 }
