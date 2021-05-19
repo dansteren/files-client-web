@@ -1,6 +1,6 @@
 import { FileType } from './types'
 
-export default {
+const db = {
   favorites: [
     { id: '01', name: 'AirDrop' },
     { id: '02', name: 'Recents' },
@@ -30,6 +30,12 @@ export default {
     { id: '15', name: 'WWWWWWWWW WWWWWWWWWW', type: 'file' },
     { id: '16', name: 'This file name is almost too long', type: 'file' },
     { id: '17', name: 'CONTRIBUTING.md', type: 'file' },
-    { id: '18', name: 'Long file name that is way too long.json', type: 'file' }
+    {
+      id: '18',
+      name: 'Long file name that is way too long.json',
+      type: 'file'
+    }
   ] as Array<FileType>
 }
+
+export default db
